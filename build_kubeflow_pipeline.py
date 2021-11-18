@@ -9,4 +9,6 @@ import click
 from kfp import aws, dsl
 from kfp.compiler.compiler import Compiler
 
-from kedro.fram
+from kedro.framework.project import pipelines
+from kedro.framework.startup import bootstrap_project
+from kedro.pipeline.node import Nod
