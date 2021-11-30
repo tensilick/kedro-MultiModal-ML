@@ -32,4 +32,10 @@ def generate_kfp(image: str, pipeline_name: str, env: str) -> None:
     """
     global _PIPELINE
     global _IMAGE
-    _IMA
+    _IMAGE = image
+
+    project_path = Path.cwd()
+    metadata = bootstrap_project(project_path)
+    package_name = metadata.package_name
+
+    pipeli
