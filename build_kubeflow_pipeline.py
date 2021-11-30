@@ -22,4 +22,8 @@ _IMAGE = None
 @click.option("-p", "--pipeline", "pipeline_name", default=None)
 @click.option("--env", "-e", type=str, default=None)
 def generate_kfp(image: str, pipeline_name: str, env: str) -> None:
-    """Generates a
+    """Generates a workflow spec yaml file from a Kedro pipeline.
+
+    Args:
+        image: container image name.
+        pipeline_name: pipeline
