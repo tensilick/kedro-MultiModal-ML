@@ -38,4 +38,7 @@ def generate_kfp(image: str, pipeline_name: str, env: str) -> None:
     metadata = bootstrap_project(project_path)
     package_name = metadata.package_name
 
-    pipeli
+    pipeline_name = pipeline_name or "__default__"
+    _PIPELINE = pipelines.get(pipeline_name)
+
+    Compiler().compile(convert_kedro_pipeline_to_kf
