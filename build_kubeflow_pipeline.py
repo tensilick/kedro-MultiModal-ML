@@ -41,4 +41,8 @@ def generate_kfp(image: str, pipeline_name: str, env: str) -> None:
     pipeline_name = pipeline_name or "__default__"
     _PIPELINE = pipelines.get(pipeline_name)
 
-    Compiler().compile(convert_kedro_pipeline_to_kf
+    Compiler().compile(convert_kedro_pipeline_to_kfp, package_name + ".yaml")
+
+
+@dsl.pipeline(name="Kedro pipeline", description="Kubeflow pipeline for Kedro project")
+def convert_kedro_pipeline_t
