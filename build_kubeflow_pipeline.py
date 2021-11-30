@@ -45,4 +45,6 @@ def generate_kfp(image: str, pipeline_name: str, env: str) -> None:
 
 
 @dsl.pipeline(name="Kedro pipeline", description="Kubeflow pipeline for Kedro project")
-def convert_kedro_pipeline_t
+def convert_kedro_pipeline_to_kfp() -> None:
+    """Convert from a Kedro pipeline into a kfp container graph."""
+    node_dependencies = _PIPELINE.node_dependencies
