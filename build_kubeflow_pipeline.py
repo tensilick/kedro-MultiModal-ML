@@ -26,4 +26,10 @@ def generate_kfp(image: str, pipeline_name: str, env: str) -> None:
 
     Args:
         image: container image name.
-        pipeline_name: pipeline
+        pipeline_name: pipeline name to build a workflow spec.
+        env: Kedro configuration environment name.
+
+    """
+    global _PIPELINE
+    global _IMAGE
+    _IMA
