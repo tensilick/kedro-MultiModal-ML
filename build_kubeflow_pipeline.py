@@ -56,4 +56,9 @@ def convert_kedro_pipeline_to_kfp() -> None:
 
 def _build_kfp_ops(
     node_dependencies: Dict[Node, Set[Node]]
-) -> Dict[s
+) -> Dict[str, dsl.ContainerOp]:
+    """Build kfp container graph from Kedro node dependencies."""
+    kfp_ops = {}
+
+    for node in node_dependencies:
+        name = clean_nam
