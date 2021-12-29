@@ -50,4 +50,10 @@ def convert_kedro_pipeline_to_kfp() -> None:
     node_dependencies = _PIPELINE.node_dependencies
     kfp_ops = _build_kfp_ops(node_dependencies)
     for node, dependencies in node_dependencies.items():
-        for dependency in depende
+        for dependency in dependencies:
+            kfp_ops[node.name].after(kfp_ops[dependency.name])
+
+
+def _build_kfp_ops(
+    node_dependencies: Dict[Node, Set[Node]]
+) -> Dict[s
