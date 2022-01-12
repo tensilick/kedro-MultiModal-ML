@@ -61,4 +61,8 @@ def _build_kfp_ops(
     kfp_ops = {}
 
     for node in node_dependencies:
-        name = clean_nam
+        name = clean_name(node.name)
+        kfp_ops[node.name] = dsl.ContainerOp(
+            name=name,
+            image=_IMAGE,
+            co
