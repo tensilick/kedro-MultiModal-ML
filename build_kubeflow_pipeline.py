@@ -65,4 +65,7 @@ def _build_kfp_ops(
         kfp_ops[node.name] = dsl.ContainerOp(
             name=name,
             image=_IMAGE,
-            co
+            command=["kedro"],
+            arguments=["run", "--node", node.name],
+        ).apply(
+            # Configure the container to use AWS credentia
