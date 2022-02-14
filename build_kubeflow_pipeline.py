@@ -68,4 +68,9 @@ def _build_kfp_ops(
             command=["kedro"],
             arguments=["run", "--node", node.name],
         ).apply(
-            # Configure the container to use AWS credentia
+            # Configure the container to use AWS credentials.
+            aws.use_aws_secret(
+                "aws-secrets", "AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY"
+            )
+        )
+    return 
