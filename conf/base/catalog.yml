@@ -1,0 +1,47 @@
+
+# Here you can define all your data sets by using simple YAML syntax.
+#
+# Documentation for this file format can be found in "The Data Catalog"
+# Link: https://kedro.readthedocs.io/en/stable/data/data_catalog.html
+
+text_data:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/test_report.csv
+
+tabular_model_saved:
+  type: tensorflow.TensorFlowModelDataset
+  filepath: data/06_models/tabular_model
+
+image_data:
+  type: PartitionedDataSet
+  dataset: {
+      "type": "kedro_tf_image.extras.datasets.tf_image_dataset.TfImageDataSet",
+      "imagedim": 224,
+      "preprocess_input": "tensorflow.keras.applications.resnet50.preprocess_input"
+  }
+  path: data/01_raw/imageset
+  filename_suffix: ".jpg"
+
+
+chexnet_weights:
+  type: kedro_tf_image.extras.datasets.tf_model_weights.TfModelWeights
+  filepath: data/03_primary/brucechou1983_CheXNet_Keras_0.3.0_weights.h5
+  architecture: DenseNet121
+  load_args:
+    class_num: 14
+
+tabular_data:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/test_dataset.csv
+
+bert_model:
+  type: kedro_tf_text.extras.datasets.bert_model_download.BertModelDownload
+  preprocessor_url: "https://tfhub.dev/tensorflow/bert_en_uncased_preprocess/3"
+  encoder_url: "https://tfhub.dev/tensorflow/bert_en_uncased_L-12_H-768_A-12/4"
+
+bert_model_saved:
+  type: tensorflow.TensorFlowModelDataset
+  filepath: data/06_models/bert-tf
+
+
+fusion_model:

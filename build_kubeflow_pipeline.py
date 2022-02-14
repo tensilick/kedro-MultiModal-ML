@@ -83,4 +83,8 @@ def clean_name(name: str) -> str:
         name: formatted name.
 
     """
-    ret
+    return re.sub(r"[\W_]+", "-", name).strip("-")
+
+
+if __name__ == "__main__":
+    generate_kfp()
