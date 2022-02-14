@@ -73,4 +73,14 @@ def _build_kfp_ops(
                 "aws-secrets", "AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY"
             )
         )
-    return 
+    return kfp_ops
+
+
+def clean_name(name: str) -> str:
+    """Reformat a name.
+
+    Returns:
+        name: formatted name.
+
+    """
+    ret
