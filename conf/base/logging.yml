@@ -11,4 +11,10 @@ handlers:
     console:
         class: logging.StreamHandler
         level: INFO
-        formatter: simpl
+        formatter: simple
+        stream: ext://sys.stdout
+
+    info_file_handler:
+        class: logging.handlers.RotatingFileHandler
+        level: INFO
+    
