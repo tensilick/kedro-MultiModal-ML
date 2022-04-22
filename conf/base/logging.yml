@@ -46,4 +46,10 @@ loggers:
         propagate: no
 
     kedro.pipeline:
-     
+        level: INFO
+        handlers: [console, info_file_handler, error_file_handler]
+        propagate: no
+
+root:
+    level: INFO
+    handlers: [console,
