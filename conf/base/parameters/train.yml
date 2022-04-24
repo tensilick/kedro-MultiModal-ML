@@ -13,4 +13,10 @@ multimodal:
   TARGET: dm # The header of the dependant variable
   DROP: ["name", "id"]
   EARLY_FUSION: True
-  train_embedding: Tr
+  train_embedding: True  # Keep it same as EARLY_FUSION
+  DENSE_LAYER: 128
+  EPOCHS: 2
+  NCLASSES: 1
+  MAX_LENGTH: 40
+  SERVING: data/08_reporting/train/
+  E
