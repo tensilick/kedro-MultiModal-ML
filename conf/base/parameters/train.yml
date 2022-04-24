@@ -19,4 +19,7 @@ multimodal:
   NCLASSES: 1
   MAX_LENGTH: 40
   SERVING: data/08_reporting/train/
-  E
+  EVALUATE: False
+  BATCH_SIZE: 4
+  CALLBACKS: False
+  WORKERS: 4
