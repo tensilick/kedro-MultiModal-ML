@@ -157,3 +157,73 @@ latex_documents = [
 ]
 
 # -- Options for manual page output ------------------------------------------
+
+# One entry per manual page. List of tuples
+# (source start file, name, description, authors, manual section).
+man_pages = [
+    (
+        master_doc,
+        "kedro_tf_multimodal",
+        "kedro_tf_multimodal Documentation",
+        [author],
+        1,
+    )
+]
+
+# -- Options for Texinfo output ----------------------------------------------
+
+# Grouping the document tree into Texinfo files. List of tuples
+# (source start file, target name, title, author,
+#  dir menu entry, description, category)
+texinfo_documents = [
+    (
+        master_doc,
+        "kedro_tf_multimodal",
+        "kedro_tf_multimodal Documentation",
+        author,
+        "kedro_tf_multimodal",
+        "Project kedro_tf_multimodal codebase.",
+        "Data-Science",
+    )
+]
+
+# -- Options for todo extension ----------------------------------------------
+
+# If true, `todo` and `todoList` produce output, else they produce nothing.
+todo_include_todos = False
+
+# -- Extension configuration -------------------------------------------------
+
+# nbsphinx_prolog = """
+# see here for prolog/epilog details:
+# https://nbsphinx.readthedocs.io/en/0.3.1/prolog-and-epilog.html
+# """
+
+# -- NBconvert kernel config -------------------------------------------------
+nbsphinx_kernel_name = "python3"
+
+
+def remove_arrows_in_examples(lines):
+    for i, line in enumerate(lines):
+        lines[i] = line.replace(">>>", "")
+
+
+def autodoc_process_docstring(app, what, name, obj, options, lines):
+    remove_arrows_in_examples(lines)
+
+
+def skip(app, what, name, obj, skip, options):
+    if name == "__init__":
+        return False
+    return skip
+
+
+def setup(app):
+    app.connect("autodoc-process-docstring", autodoc_process_docstring)
+    app.connect("autodoc-skip-member", skip)
+    # add Kedro stylesheets
+    for stylesheet in find_stylesheets():
+        app.add_css_file(stylesheet)
+    # enable rendering RST tables in Markdown
+    app.add_config_value("recommonmark_config", {"enable_eval_rst": True}, True)
+    app.add_transform(AutoStructify)
