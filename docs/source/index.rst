@@ -11,4 +11,9 @@ Welcome to project kedro_tf_multimodal's API docs!
    modules
 
 
-Indices an
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
