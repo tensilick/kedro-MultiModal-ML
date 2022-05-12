@@ -11,4 +11,10 @@ signature_def['__saved_model_init_op']:
   The given SavedModel SignatureDef contains the following input(s):
   The given SavedModel SignatureDef contains the following output(s):
     outputs['__saved_model_init_op'] tensor_info:
-        d
+        dtype: DT_INVALID
+        shape: unknown_rank
+        name: NoOp
+  Method name is:
+
+signature_def['serving_default']:
+ 
