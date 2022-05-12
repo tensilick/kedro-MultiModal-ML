@@ -8,4 +8,7 @@ saved_model_cli show --all --dir data/08_reporting/
 MetaGraphDef with tag-set: 'serve' contains the following SignatureDefs:
 
 signature_def['__saved_model_init_op']:
-  The given SavedModel SignatureDef contains th
+  The given SavedModel SignatureDef contains the following input(s):
+  The given SavedModel SignatureDef contains the following output(s):
+    outputs['__saved_model_init_op'] tensor_info:
+        d
