@@ -17,4 +17,8 @@ signature_def['__saved_model_init_op']:
   Method name is:
 
 signature_def['serving_default']:
- 
+  The given SavedModel SignatureDef contains the following input(s):
+    inputs['age'] tensor_info:
+        dtype: DT_FLOAT
+        shape: (-1, 1)
+        name: serving
