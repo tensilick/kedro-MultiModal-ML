@@ -47,4 +47,4 @@ signature_def['serving_default']:
         dtype: DT_FLOAT
         shape: (-1, 1)
         name: StatefulPartitionedCall_2:0
-  M
+  Method name is: tensorflow/serving/predict
