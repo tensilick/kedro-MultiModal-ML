@@ -39,4 +39,7 @@ signature_def['serving_default']:
         shape: (-1)
         name: serving_default_text_input_for_bert:0
     inputs['zip'] tensor_info:
-    
+        dtype: DT_FLOAT
+        shape: (-1, 1)
+        name: serving_default_zip:0
+  The given SavedModel SignatureDef contains the following o
