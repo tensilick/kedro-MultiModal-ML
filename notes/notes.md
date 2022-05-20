@@ -42,4 +42,9 @@ signature_def['serving_default']:
         dtype: DT_FLOAT
         shape: (-1, 1)
         name: serving_default_zip:0
-  The given SavedModel SignatureDef contains the following o
+  The given SavedModel SignatureDef contains the following output(s):
+    outputs['fusion_1'] tensor_info:
+        dtype: DT_FLOAT
+        shape: (-1, 1)
+        name: StatefulPartitionedCall_2:0
+  M
