@@ -30,4 +30,9 @@ signature_def['serving_default']:
         dtype: DT_STRING
         shape: (-1, 1)
         name: serving_default_gender:0
-    inputs['input_1'] tensor_in
+    inputs['input_1'] tensor_info:
+        dtype: DT_FLOAT
+        shape: (-1, 224, 224, 3)
+        name: serving_default_input_1:0
+    inputs['text_input_for_bert'] tensor_info:
+  
