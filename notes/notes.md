@@ -26,4 +26,8 @@ signature_def['serving_default']:
         dtype: DT_FLOAT
         shape: (-1, 1)
         name: serving_default_bp:0
-    in
+    inputs['gender'] tensor_info:
+        dtype: DT_STRING
+        shape: (-1, 1)
+        name: serving_default_gender:0
+    inputs['input_1'] tensor_in
