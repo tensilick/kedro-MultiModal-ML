@@ -35,4 +35,8 @@ signature_def['serving_default']:
         shape: (-1, 224, 224, 3)
         name: serving_default_input_1:0
     inputs['text_input_for_bert'] tensor_info:
-  
+        dtype: DT_STRING
+        shape: (-1)
+        name: serving_default_text_input_for_bert:0
+    inputs['zip'] tensor_info:
+    
