@@ -21,4 +21,9 @@ signature_def['serving_default']:
     inputs['age'] tensor_info:
         dtype: DT_FLOAT
         shape: (-1, 1)
-        name: serving
+        name: serving_default_age:0
+    inputs['bp'] tensor_info:
+        dtype: DT_FLOAT
+        shape: (-1, 1)
+        name: serving_default_bp:0
+    in
