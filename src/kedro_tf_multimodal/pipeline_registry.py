@@ -14,3 +14,6 @@ def register_pipelines() -> Dict[str, Pipeline]:
         A mapping from a pipeline name to a ``Pipeline`` object.
     """
 
+    return {
+        "__default__": create_pipeline(), # * Build fusion model
+        "train": create_train_pipeline(), # * Train fus
