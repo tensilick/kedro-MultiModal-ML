@@ -16,4 +16,5 @@ def register_pipelines() -> Dict[str, Pipeline]:
 
     return {
         "__default__": create_pipeline(), # * Build fusion model
-        "train": create_train_pipeline(), # * Train fus
+        "train": create_train_pipeline(), # * Train fusion model
+        }
