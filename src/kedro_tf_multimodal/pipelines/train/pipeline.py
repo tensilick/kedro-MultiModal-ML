@@ -10,4 +10,7 @@ from kedro_tf_utils.pipelines.fusion.pipeline import create_fusion_pipeline
 from kedro.pipeline.modular_pipeline import pipeline as modular_pipeline
 from kedro_tf_text.pipelines.bert.pipeline import download_bert
 
-from kedro_tf_text.pipelines.tabular.pipeline import tabular_model_p
+from kedro_tf_text.pipelines.tabular.pipeline import tabular_model_pipeline
+from kedro_tf_image.pipelines.preprocess.pipeline import create_classification_layer
+
+from kedro_tf_t
