@@ -13,4 +13,5 @@ from kedro_tf_text.pipelines.bert.pipeline import download_bert
 from kedro_tf_text.pipelines.tabular.pipeline import tabular_model_pipeline
 from kedro_tf_image.pipelines.preprocess.pipeline import create_classification_layer
 
-from kedro_tf_t
+from kedro_tf_text.pipelines.preprocess.pipeline import process_text_pipeline, glove_embedding
+from kedro_tf_text.pipelines.cnn.pipeline import cn
