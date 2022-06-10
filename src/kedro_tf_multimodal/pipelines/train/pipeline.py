@@ -19,4 +19,5 @@ from kedro_tf_text.pipelines.cnn.pipeline import cnn_text_pipeline
 # Download BERT model and save it in the TF Hub format in bert_model_saved catalog
 bert_model = modular_pipeline(pipe=download_bert, parameters={
                               "params:bert_model": "params:multimodal"})
-# creates a tabular model from the tabular data and save
+# creates a tabular model from the tabular data and saves it in the tabular_model_saved catalog.
+# The tabular data in csv has ID, column1, column2, columnx, label format: Refer to https://githu
