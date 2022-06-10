@@ -20,4 +20,5 @@ from kedro_tf_text.pipelines.cnn.pipeline import cnn_text_pipeline
 bert_model = modular_pipeline(pipe=download_bert, parameters={
                               "params:bert_model": "params:multimodal"})
 # creates a tabular model from the tabular data and saves it in the tabular_model_saved catalog.
-# The tabular data in csv has ID, column1, column2, columnx, label format: Refer to https://githu
+# The tabular data in csv has ID, column1, column2, columnx, label format: Refer to https://github.com/dermatologist/kedro-tf-text
+tabular_model = modular_pipeline(pipe=tabular_model_pipeline, outputs={"tabular_model"
