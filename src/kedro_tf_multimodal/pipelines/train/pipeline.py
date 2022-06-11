@@ -25,4 +25,5 @@ tabular_model = modular_pipeline(pipe=tabular_model_pipeline, outputs={"tabular_
     "params:tabular": "params:multimodal"})
 
 """ For CNN TEXT MODEL"""
-preprocess_text_pipeline 
+preprocess_text_pipeline = modular_pipeline(pipe=process_text_pipeline, parameters={"params:embedding": "params:multimodal"})
+preprocess_glove_embedding 
