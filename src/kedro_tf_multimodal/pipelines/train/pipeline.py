@@ -28,4 +28,5 @@ tabular_model = modular_pipeline(pipe=tabular_model_pipeline, outputs={"tabular_
 preprocess_text_pipeline = modular_pipeline(pipe=process_text_pipeline, parameters={"params:embedding": "params:multimodal"})
 preprocess_glove_embedding = modular_pipeline(pipe=glove_embedding, parameters={"params:embedding": "params:multimodal"})
 # save word2vec_embedding from above step (include in catalogue). This is needed for preprocessing text data for CNN model
-cnn_text_pipeline = modular_pipeline(pipe=cnn_tex
+cnn_text_pipeline = modular_pipeline(pipe=cnn_text_pipeline, parameters={"params:cnn_text_model": "params:multimodal"})
+cnn_text_final = preprocess_glove_embedding + cnn_text_pipeli
