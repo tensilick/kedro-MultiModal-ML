@@ -34,4 +34,7 @@ cnn_text_final = preprocess_glove_embedding + cnn_text_pipeline
 # Loads the chexnet weights and adds a classification layer to it.
 chexnet_model_pipeline = create_classification_layer()
 chexnet_model = modular_pipeline(pipe=chexnet_model_pipeline, parameters={
-                                 "params:add_layer": "params:multimodal"})  #
+                                 "params:add_layer": "params:multimodal"})  # chexnet_weights -> chexnet_model
+
+# Creates a fusion model from the bert, tabular and image models and saves it in the fusion_model catalog.
+# mod
