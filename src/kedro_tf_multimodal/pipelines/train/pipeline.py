@@ -54,4 +54,5 @@ fusion_model = modular_pipeline(pipe=_fusion_pipeline, outputs={
 # ! COPY vocab.txt from bert_model_saved to fusion_model, if using BERT
 
 # Trains the fusion model and saves it in the trained_model catalog.
-# * Replace "processed_data": "processed_text", "text_data": "te
+# * Replace "processed_data": "processed_text", "text_data": "text_data", WITH "bert_data": "text_data", if using BERT
+train = {"parameters": "params:multimodal", "model": "fusion_model", "output
