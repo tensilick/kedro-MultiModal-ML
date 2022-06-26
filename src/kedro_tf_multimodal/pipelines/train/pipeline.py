@@ -39,4 +39,9 @@ chexnet_model = modular_pipeline(pipe=chexnet_model_pipeline, parameters={
 # Creates a fusion model from the bert, tabular and image models and saves it in the fusion_model catalog.
 # model names should start with model type (bert, tabular, image or text)
 """ BERT
-inputs = {"parameters": "params:multimodal", "bert_mode
+inputs = {"parameters": "params:multimodal", "bert_model": "bert_model_saved", "tabular_model": "tabular_model_saved",
+          "image_model": "chexnet_model"}
+"""
+
+""" CNN TEXT MODEL"""
+i
