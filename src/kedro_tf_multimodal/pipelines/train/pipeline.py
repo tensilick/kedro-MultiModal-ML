@@ -44,4 +44,5 @@ inputs = {"parameters": "params:multimodal", "bert_model": "bert_model_saved", "
 """
 
 """ CNN TEXT MODEL"""
-i
+inputs = {"parameters": "params:multimodal", "text_model": "cnn_text_model", "tabular_model": "tabular_model_saved",
+          "image_model": "chex
