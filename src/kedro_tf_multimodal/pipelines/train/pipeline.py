@@ -49,4 +49,6 @@ inputs = {"parameters": "params:multimodal", "text_model": "cnn_text_model", "ta
 
 _fusion_pipeline = create_fusion_pipeline(**inputs)
 fusion_model = modular_pipeline(pipe=_fusion_pipeline, outputs={
-         
+                                "fusion_model": "fusion_model"})
+
+# ! COPY vocab.txt from bert_model_saved to fusion_model, if using BE
