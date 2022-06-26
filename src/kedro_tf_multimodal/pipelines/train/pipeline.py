@@ -55,4 +55,5 @@ fusion_model = modular_pipeline(pipe=_fusion_pipeline, outputs={
 
 # Trains the fusion model and saves it in the trained_model catalog.
 # * Replace "processed_data": "processed_text", "text_data": "text_data", WITH "bert_data": "text_data", if using BERT
-train = {"parameters": "params:multimodal", "model": "fusion_model", "output
+train = {"parameters": "params:multimodal", "model": "fusion_model", "outputs": "trained_model",
+         "processed_data": "processed_text", "text_data": "text_data", "tabular_data": "tabular_data", "image_data": "ima
