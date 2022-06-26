@@ -45,4 +45,8 @@ inputs = {"parameters": "params:multimodal", "bert_model": "bert_model_saved", "
 
 """ CNN TEXT MODEL"""
 inputs = {"parameters": "params:multimodal", "text_model": "cnn_text_model", "tabular_model": "tabular_model_saved",
-          "image_model": "chex
+          "image_model": "chexnet_model"}
+
+_fusion_pipeline = create_fusion_pipeline(**inputs)
+fusion_model = modular_pipeline(pipe=_fusion_pipeline, outputs={
+         
