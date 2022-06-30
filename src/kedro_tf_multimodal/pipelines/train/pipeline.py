@@ -67,4 +67,6 @@ def create_pipeline(**kwargs) -> Pipeline:
     return cnn_text_final + tabular_model + chexnet_model + fusion_model
 
 # * Train fusion model
-def create_trai
+def create_train_pipeline(**kwargs) -> Pipeline:
+    # preprocess_text_pipeline not needed for BERT
+    return preprocess_text_pipeline + train_pipeline
