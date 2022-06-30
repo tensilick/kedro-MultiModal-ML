@@ -63,4 +63,8 @@ train_pipeline = create_train_pipeline(**train)
 
 # * Build fusion model
 def create_pipeline(**kwargs) -> Pipeline:
-    ## bert_model can r
+    ## bert_model can replace cnn_text_final
+    return cnn_text_final + tabular_model + chexnet_model + fusion_model
+
+# * Train fusion model
+def create_trai
