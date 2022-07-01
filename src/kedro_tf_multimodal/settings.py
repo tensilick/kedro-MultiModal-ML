@@ -6,4 +6,8 @@ https://kedro.readthedocs.io/en/stable/kedro_project_setup/settings.html."""
 # from kedro_tf_multimodal.hooks import ProjectHooks
 # HOOKS = (ProjectHooks(),)
 
-# Installed plugins for which to disable hook auto-re
+# Installed plugins for which to disable hook auto-registration.
+# DISABLE_HOOKS_FOR_PLUGINS = ("kedro-viz",)
+
+# Class that manages storing KedroSession data.
+# from kedro.framework.session.sto
