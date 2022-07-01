@@ -10,4 +10,8 @@ https://kedro.readthedocs.io/en/stable/kedro_project_setup/settings.html."""
 # DISABLE_HOOKS_FOR_PLUGINS = ("kedro-viz",)
 
 # Class that manages storing KedroSession data.
-# from kedro.framework.session.sto
+# from kedro.framework.session.store import ShelveStore
+# SESSION_STORE_CLASS = ShelveStore
+# Keyword arguments to pass to the `SESSION_STORE_CLASS` constructor.
+# SESSION_STORE_ARGS = {
+#    
