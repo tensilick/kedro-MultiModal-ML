@@ -19,4 +19,10 @@ https://kedro.readthedocs.io/en/stable/kedro_project_setup/settings.html."""
 
 # Class that manages Kedro's library components.
 # from kedro.framework.context import KedroContext
-# CON
+# CONTEXT_CLASS = KedroContext
+
+# Directory that holds configuration.
+# CONF_SOURCE = "conf"
+
+# Class that manages how configuration is loaded.
+# from k
