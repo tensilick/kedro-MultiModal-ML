@@ -88,3 +88,152 @@ dynaconf==3.1.11
     # via kedro
 entrypoints==0.4
     # via jupyter-client
+exceptiongroup==1.1.0
+    # via pytest
+executing==1.2.0
+    # via stack-data
+fastjsonschema==2.16.2
+    # via nbformat
+flake8==6.0.0
+    # via -r /home/M267492/kedro-multimodal/src/requirements.txt
+flatbuffers==22.12.6
+    # via tensorflow
+fonttools==4.38.0
+    # via matplotlib
+fqdn==1.5.1
+    # via jsonschema
+fsspec==2022.11.0
+    # via kedro
+fst-pso==1.8.1
+    # via pyfume
+fuzzytm==2.0.5
+    # via gensim
+gast==0.4.0
+    # via tensorflow
+gensim==4.3.0
+    # via -r /home/M267492/kedro-multimodal/src/requirements.txt
+gitdb==4.0.10
+    # via gitpython
+gitpython==3.1.30
+    # via kedro
+google-auth==2.15.0
+    # via
+    #   google-auth-oauthlib
+    #   tensorboard
+google-auth-oauthlib==0.4.6
+    # via tensorboard
+google-pasta==0.2.0
+    # via tensorflow
+grpcio==1.51.1
+    # via
+    #   tensorboard
+    #   tensorflow
+h5py==3.7.0
+    # via tensorflow
+idna==3.4
+    # via
+    #   anyio
+    #   jsonschema
+    #   requests
+importlib-metadata==6.0.0
+    # via
+    #   jupyterlab-server
+    #   kedro
+    #   markdown
+    #   nbconvert
+importlib-resources==5.10.2
+    # via
+    #   jsonschema
+    #   kedro
+iniconfig==1.1.1
+    # via pytest
+ipykernel==6.19.4
+    # via
+    #   ipywidgets
+    #   jupyter
+    #   jupyter-console
+    #   nbclassic
+    #   notebook
+    #   qtconsole
+ipython==8.7.0
+    # via
+    #   -r /home/M267492/kedro-multimodal/src/requirements.txt
+    #   ipykernel
+    #   ipywidgets
+    #   jupyter-console
+    #   jupyterlab
+ipython-genutils==0.2.0
+    # via
+    #   nbclassic
+    #   notebook
+    #   qtconsole
+ipywidgets==8.0.4
+    # via jupyter
+isoduration==20.11.0
+    # via jsonschema
+isort==5.11.4
+    # via -r /home/M267492/kedro-multimodal/src/requirements.txt
+jedi==0.18.2
+    # via ipython
+jinja2==3.1.2
+    # via
+    #   cookiecutter
+    #   jinja2-time
+    #   jupyter-server
+    #   jupyterlab
+    #   jupyterlab-server
+    #   nbclassic
+    #   nbconvert
+    #   notebook
+jinja2-time==0.2.0
+    # via cookiecutter
+jmespath==0.10.0
+    # via kedro
+joblib==1.2.0
+    # via
+    #   nltk
+    #   scikit-learn
+json5==0.9.10
+    # via jupyterlab-server
+jsonpointer==2.3
+    # via jsonschema
+jsonschema[format-nongpl]==4.17.3
+    # via
+    #   jupyter-events
+    #   jupyterlab-server
+    #   nbformat
+jupyter==1.0.0
+    # via -r /home/M267492/kedro-multimodal/src/requirements.txt
+jupyter-client==7.4.8
+    # via
+    #   ipykernel
+    #   jupyter-console
+    #   jupyter-server
+    #   nbclassic
+    #   nbclient
+    #   notebook
+    #   qtconsole
+jupyter-console==6.4.4
+    # via jupyter
+jupyter-core==5.1.1
+    # via
+    #   jupyter-client
+    #   jupyter-server
+    #   jupyterlab
+    #   nbclassic
+    #   nbclient
+    #   nbconvert
+    #   nbformat
+    #   notebook
+    #   qtconsole
+jupyter-events==0.5.0
+    # via jupyter-server
+jupyter-server==2.0.6
+    # via
+    #   jupyterlab
+    #   jupyterlab-server
+    #   nbclassic
+    #   notebook-shim
+jupyter-server-terminals==0.4.3
+    # via jupyter-server
+jupyterlab==3.5.2
