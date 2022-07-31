@@ -34,4 +34,4 @@ https://kedro.readthedocs.io/en/stable/kedro_project_setup/settings.html."""
 
 # Class that manages the Data Catalog.
 # from kedro.io import DataCatalog
-# DA
+# DATA_CATALOG_CLASS = DataCatalog
