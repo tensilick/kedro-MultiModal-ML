@@ -12,4 +12,6 @@ pytest
 tensorflow
 pandas
 nltk
-kedro_tf_text @ git+https://github.com/dermatologist/kedro-tf-text.git@d
+kedro_tf_text @ git+https://github.com/dermatologist/kedro-tf-text.git@develop
+kedro_tf_image @ git+https://github.com/dermatologist/kedro-tf-image.git@develop
+kedro_tf_utils @ git+https://github.com/dermato
