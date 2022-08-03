@@ -1,0 +1,7 @@
+black
+flake8
+ipython
+isort
+jupyter
+jupyterlab
+k
