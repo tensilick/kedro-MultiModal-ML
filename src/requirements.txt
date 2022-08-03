@@ -4,4 +4,12 @@ ipython
 isort
 jupyter
 jupyterlab
-k
+kedro==0.18.4
+nbstripout
+pytest-cov
+pytest-mock
+pytest
+tensorflow
+pandas
+nltk
+kedro_tf_text @ git+https://github.com/dermatologist/kedro-tf-text.git@d
