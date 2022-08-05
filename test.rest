@@ -1,4 +1,9 @@
 ###
 GET http://localhost:8501/v1/models/train
 
-### POST h
+### POST http://localhost:8501/v1/models/train:predict
+POST http://localhost:8501/v1/models/train:predict HTTP/1.1
+content-type: application/json
+
+{
+  "s
