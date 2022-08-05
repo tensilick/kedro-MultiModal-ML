@@ -5,4 +5,5 @@ Please add your pipeline tests here.
 
 Kedro recommends using `pytest` framework, more info about it can be found
 in the official documentation:
-https://
+https://docs.pytest.org/en/latest/getting-started.html
+"""
