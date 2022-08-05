@@ -6,4 +6,10 @@ POST http://localhost:8501/v1/models/train:predict HTTP/1.1
 content-type: application/json
 
 {
-  "s
+  "signature_name": "serving_bytes",
+  "instances": [{
+    "age": 24,
+    "bp": 85,
+    "gender": "Male",
+    "zip": 12345,
+    "text
