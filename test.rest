@@ -12,4 +12,5 @@ content-type: application/json
     "bp": 85,
     "gender": "Male",
     "zip": 12345,
-    "text
+    "text_input_for_bert": "This is a test sentence.",
+    "input_bytes": {"b64": "/9j/4AAQSkZJRgABAQAASABIAAD/4QBYRXhpZgAATU0AKgAAAAgAAgESAAMAAAABAAEAAIdpAAQAAAABAAAAJgAAAAA
